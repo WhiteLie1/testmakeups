@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="hot_search"><!--热搜栏的设定-->
+    <text class="words">我的肤质近况：</text>
+    <input class='fenshu' value='78分' style="text-align:center"></input> 
+  </view>
+  <input class='fenshu' value='综合得分' style="text-align:right"></input> 
+
+  <view class="fuzhi">
+  <text class="words">肤质：</text>
+    <input class='hot' value='特征1'></input>
+    <input class='hot' value='特征2'></input>
+    <input class='hot' value='特征3'></input>
+  </view>
+
+  <view class="wenti">
+  <text class="words">问题：</text>
+    <input class='hot' value='问题1'></input>
+    <input class='hot' value='问题2'></input>
+    <input class='hot' value='问题3'></input>
+  </view>
+
+  <input class='yiju' value='根据07月20日-07月26日的一条检查记录生成的' style="text-align:center"></input>
+  <text class="shousuo" style="text-align:center">已经为你搜索 163456589条记录！</text>
+  <text class="shousuo"style="text-align:center">90%xx特征匹配结果12354648条</text>
+  <text class="shousuo"style="text-align:center">90%yy特征匹配结果21548635条</text>
+
+<text class="tuijian">我们为您推荐：</text> 
+ 
+</view>

@@ -1,13 +1,58 @@
 {
   "pages": [
+    "pages/shangchen/shangchen",
+    "pages/tuijian/tuijian",
+    "pages/weiliao/weiliao",
+    "pages/wode/wode",
+    "pages/gouwuche/gouwuche",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
+    "enablePullDownRefresh": true,
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "makeups",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#9B9DB1",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#486",
+    "list": [
+      {
+        "pagePath": "pages/shangchen/shangchen",
+        "text": "商城",
+        "iconPath": "images/shangchen.png",
+        "selectedIconPath": "images/Dshangchen.png"
+      },
+      {
+        "pagePath": "pages/tuijian/tuijian",
+        "text": "推荐",
+        "iconPath": "images/tuijian.png",
+        "selectedIconPath": "images/Dtuijian.png"
+      },
+      {
+        "pagePath": "pages/weiliao/weiliao",
+        "text": "微聊",
+        "iconPath": "images/weiliao.png",
+        "selectedIconPath": "images/Dweiliao.png"
+      },
+      {
+        "pagePath": "pages/gouwuche/gouwuche",
+        "text": "购物车",
+        "iconPath": "images/gouwuche.png",
+        "selectedIconPath": "images/Dgouwuche.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/Dwode.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

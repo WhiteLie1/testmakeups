@@ -1,0 +1,46 @@
+.container{
+    padding: 0;
+}
+.fenshu{
+  /*font-weight: bold;*/
+    float: right;
+}
+  .words{/*words 也就是热搜两个字的属性设定*/
+    font-weight: bold;
+    float: left;
+  }
+.fuzhi{/*热搜栏的设定*/
+  margin-top: 20px;/*上下之间的间距*/
+  margin-left: 0px;
+  width: 90%;
+}
+.wenti{/*热搜栏的设定*/
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 90%;
+}
+.yiju{/*热搜栏的设定*/
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 90%;
+}
+.shousuo{/*热搜栏的设定*/
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 90%;
+  
+}
+.hot{/*热搜后面的排布设定*/
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+  border-radius: 20px;
+  width: 50px;
+  /*font-size: x-small;*/
+  text-align: center;
+  margin-left: 28px;/*两个方框之间的间距*/
+}
+.tuijian{/*words 也就是热搜两个字的属性设定*/
+    margin-top: 15px;
+    font-weight: bold;
+    float: left;
+  }
