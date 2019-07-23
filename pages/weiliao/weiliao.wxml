@@ -24,6 +24,60 @@
   <view class="Dshouye">
     <!--首页设定-->
     <text class="shouye">首页</text>
+    <image class='fabiao' src='/images/fabiao.png'></image>
   </view>
+
+  <view class="Rremen">
+    <!--热门话题设定-->
+
+    <text class="rremen">热门话题</text>
+    <view class='R1'>
+      <image class='jing' src='/images/jinghao.png'></image>
+      <text>[征集]你想聊的话题</text>
+    </view>
+    <view class='R1'>
+      <image class='jing' src='/images/jinghao.png'></image>
+      <text>敏感肌用什么去黑头比较好呢？</text>
+    </view>
+    <view class='R1'>
+      <image class='jing' src='/images/jinghao.png'></image>
+      <text>低成本美白美白美白！</text>
+    </view>
+  </view>
+
+  <view class="Rtong">
+    <!--同肤质在聊设定-->
+    <text class="rtong">同肤质在聊</text>
+    <view class='R1'>
+      <image class='jing' src='/images/jinghao.png'></image>
+      <text>美白丸真的能美白吗？</text>
+    </view>
+    <view class='R1'>
+      <image class='jing' src='/images/jinghao.png'></image>
+      <text>发现一款去黑头神器！</text>
+    </view>
+    <view class='R1'>
+      <image class='jing' src='/images/jinghao.png'></image>
+      <text>油皮一人说一款好用的产品</text>
+    </view>
+  </view>
+
+  <view class="Rxin">
+    <!--新话题设定-->
+    <text class="rxin">新话题</text>
+    <view class='R1'>
+      <image class='jing' src='/images/jinghao.png'></image>
+      <text>好尴尬，护肤品上脸总是。。。</text>
+    </view>
+    <view class='R1'>
+      <image class='jing' src='/images/jinghao.png'></image>
+      <text>踩过雷的口红，备注下来牢记！</text>
+    </view>
+    <view class='R1'>
+      <image class='jing' src='/images/jinghao.png'></image>
+      <text>用过哪些神坑产品</text>
+    </view>
+  </view>
+
 
 </view>

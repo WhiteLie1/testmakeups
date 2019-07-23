@@ -31,5 +31,44 @@
   font-weight: bold;
   float: left;
   margin-left: 20px;
-
+  font-size: 50rpx;
+}
+.Dshouye{
+  display: flex;
+  flex-direction: row;
+  color: #7cbf
+}
+.fabiao{
+  width: 32rpx;
+  height: 32rpx;
+  float: right;
+}
+.rremen{
+  padding: 10px;
+  font-size: 34rpx;
+  color: #cf96b0;
+  margin: 25px;
+  
+}
+.rtong{
+  padding: 10px;
+  font-size: 34rpx;
+  color: #cf96b0;
+  margin: 25px;
+}
+.rxin{
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 34rpx;
+  color: #cf96b0;
+  margin: 25px;
+}
+.R1{
+  font-size: 27rpx;
+}
+.jing{
+  width: 27rpx;
+  height: 27rpx;
+  float: left;
+  color:#7cbf
 }

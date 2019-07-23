@@ -1,6 +1,11 @@
 .container {
   padding: 0;
 }
+.dabeijin{
+  background: #eff9fa;
+  width:740rpx;
+  height: 530rpx;
+}
 
 .fenshu {
   /*font-weight: bold;*/
@@ -64,82 +69,18 @@
   /*words 也就是热搜两个字的属性设定*/
   margin-top: 15px;
   font-weight: bold;
+  font-size: 30rpx;
   float: left;
 }
-
-.swiper-tab {
-  width: 100%;
-  border-bottom: 1px solid #777;
-  text-align: center;
-  line-height: 40px;
-  background: #fff;
+page,
+.page,
+.page__bd{
+    height: 100%;
 }
-
-.swiper-tab-list {
-  font-size: 13px;
-  display: inline-block;
-  width: 180rpx;
-  color: #777;
+.page__bd{
+    padding-bottom: 0;
 }
-
-.on {
-  color: #fff;
-  background-color: #528dc3;
-  border-top: 5rpx solid #528dc3;
-  border-bottom: 5rpx solid #528dc3;
-}
-
-.swiper-box {
-  display: block;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.swiper-box view {
-  text-align: center;
-}
-.fifth{
-  margin-top: 15px;
-  width: 750rpx;
-}
-.goo-self{
-  margin-bottom: 20px;
-  position: relative;
-  font-size: 12px;
-  width: 100%;
-  height: 100px;
-}
-.goo-img{
-  width: 45%;
-  height: 100%;
-  float: left;
-}
-.goo-card{
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: 10px;
-  right: 5px;
-}
-.goo-lastsale{
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 8px;
-  padding-right: 8px;
-  display: block;
-  position: absolute;
-  bottom: 25px;
-  right: 93px;
-  background-color: red;
-  color: white;
-  border-radius: 10px;
-}
-.goo-price{
-  display: block;
-  position: absolute;
-  color: #DD7A47;
-  font-weight: bolder;
-  bottom: 5px;
-  right: 100px;
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
 }

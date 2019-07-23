@@ -1,43 +1,37 @@
+var sliderWidth = 100; // 需要设置slider的宽度，用于计算中间位置
 Page({
   //页面的左右滑动事件的产生
-  indicatorDots: false,
-  autoplay: false,
-  interval: 5000,
-  duration: 1000,
-  onPageScroll(e) {
-    console.log(e.scrollTop)
-  },
-
   /**
    * 页面的初始数据
    */
   data: {
-    //滑动
-    currentTab: '',
-
+    tabs: ["全部", "面膜", "洁面","乳液"],
+    activeIndex: 1,
+    sliderOffset: 0,
+    sliderLeft: 0,
+    sliderWidth:0
   },
-  //滑动处理和判断
-  /*** 滑动切换tab***/
-  bindChange: function(e) {
-    var that = this;
-    that.setData({
-      currentTab: e.detail.current
-    });
-  },
-  /*** 点击tab切换***/
-  swichNav: function(e) {
-    var that = this;
-    that.setData({
-      currentTab: e.target.dataset.current
-    });
-  },
-
-
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
+        });
+      }
+    });
+  },
+  tabClick: function (e) {
+    this.setData({
+      sliderOffset: e.currentTarget.offsetLeft,
+      activeIndex: e.currentTarget.id
+    });
+  
   },
 
   /**
