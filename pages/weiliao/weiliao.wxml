@@ -1,0 +1,29 @@
+<view>
+  <view class='box1'>
+    <!--弹性盒子的设定-->
+    <!--六个分类的设定-->
+    <view class="menu-self remen">
+      <image class='menu-img' src='/images/shoushuo.png' plain='true' mode='widthFix'></image>
+      <label class='menu-des'>搜索</label>
+    </view>
+
+    <!--六个分类的设定-->
+    <view class="menu-self remen">
+      <image class='menu-img' src='/images/fenlei.png' plain='true' mode='widthFix'></image>
+      <label class='menu-des'>分类</label>
+    </view>
+
+    <!--六个分类的设定-->
+    <view class="menu-self remen">
+      <image class='menu-img' src='/images/xiaoxi.png' plain='true' mode='widthFix'></image>
+      <label class='menu-des'>消息</label>
+    </view>
+
+  </view>
+
+  <view class="Dshouye">
+    <!--首页设定-->
+    <text class="shouye">首页</text>
+  </view>
+
+</view>

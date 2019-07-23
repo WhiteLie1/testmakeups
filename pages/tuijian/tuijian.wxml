@@ -1,19 +1,20 @@
 <view class="container">
-  <view class="hot_search"><!--热搜栏的设定-->
+  <view class="hot_search">
+    <!--热搜栏的设定-->
     <text class="words">我的肤质近况：</text>
-    <input class='fenshu' value='78分' style="text-align:center"></input> 
+    <input class='fenshu' value='78分' style="text-align:center"></input>
   </view>
-  <input class='fenshu' value='综合得分' style="text-align:right"></input> 
+  <input class='fenshu1' value='综合得分' style="text-align:right"></input>
 
   <view class="fuzhi">
-  <text class="words">肤质：</text>
+    <text class="words">肤质：</text>
     <input class='hot' value='特征1'></input>
     <input class='hot' value='特征2'></input>
     <input class='hot' value='特征3'></input>
   </view>
 
   <view class="wenti">
-  <text class="words">问题：</text>
+    <text class="words">问题：</text>
     <input class='hot' value='问题1'></input>
     <input class='hot' value='问题2'></input>
     <input class='hot' value='问题3'></input>
@@ -21,9 +22,45 @@
 
   <input class='yiju' value='根据07月20日-07月26日的一条检查记录生成的' style="text-align:center"></input>
   <text class="shousuo" style="text-align:center">已经为你搜索 163456589条记录！</text>
-  <text class="shousuo"style="text-align:center">90%xx特征匹配结果12354648条</text>
-  <text class="shousuo"style="text-align:center">90%yy特征匹配结果21548635条</text>
+  <text class="shousuo" style="text-align:center">90%xx特征匹配结果12354648条</text>
+  <text class="shousuo" style="text-align:center">90%yy特征匹配结果21548635条</text>
 
-<text class="tuijian">我们为您推荐：</text> 
- 
+  <text class="tuijian">我们为您推荐：</text>
+
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">面膜</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">洁面</view>
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">乳液</view>
+  </view>
+
+  <view class="swiper-tab-temp"></view>
+  <view>
+    <swiper current="{{currentTab}}" autoplay="{{true}}" class="swiper-box" duration="300" style="height:600px" bindchange="bindChange">
+
+      <swiper-item style="background-color:red">
+        <view class='fifth'>
+          <view class='goo-self'>
+            <image class='goo-img' src='../../images/goo1.png'></image>
+            <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生 </label>
+            <label class='goo-lastsale'>已售4230件</label>
+            <label class='goo-price'>￥90--￥120</label>
+            <image class='goo-card' src='../../images/card.png'></image>
+          </view>
+          <view class='goo-self'>
+            <image class='goo-img' src='../../images/goo2.png'></image>
+            <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
+            <label class='goo-lastsale'>已售4230件</label>
+            <label class='goo-price'>￥90--￥120</label>
+            <image class='goo-card' src='../../images/card.png'></image>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item style="background-color:red"> </swiper-item>
+
+      <swiper-item style="background-color:red"> </swiper-item>
+
+      <swiper-item style="background-color:red"> </swiper-item>
+    </swiper>
+  </view>
 </view>

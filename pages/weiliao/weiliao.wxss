@@ -1,0 +1,35 @@
+
+.menu-self{
+  /*width: 33px;*/
+  height: 40px;
+  /*font-size: 11px;*/
+  text-align: center;
+  margin: 33px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  float: left;
+}
+.menu-img{
+  width: 42rpx;
+  height: 42rpx;
+  color: #54c4c6;
+  background: #f3f1f1;
+  font-size: 33rpx;
+}
+.menu-des{
+  text-align: center;/*文字居中显示*/
+  color:#656565;
+  border-radius: 52rpx;
+  width: 28rpx;
+}
+.box1{/*流式布局的设置*/
+  display: flex;
+  font-display: flex;
+  flex-direction: row;
+}
+.shouye{
+  font-weight: bold;
+  float: left;
+  margin-left: 20px;
+
+}

@@ -10,6 +10,12 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  //一旦触发拍照事件，则立马跳转到camera
+  takePhoto: function () {
+    wx.navigateTo({
+      url: '../camera/camera'
+    })
+  },
   onLoad: function (options) {
     
   },
