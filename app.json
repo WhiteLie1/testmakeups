@@ -20,7 +20,7 @@
     "color": "#9B9DB1",
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
-    "backgroundColor": "#486",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/shangchen/shangchen",

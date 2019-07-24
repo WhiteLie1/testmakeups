@@ -1,5 +1,4 @@
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -7,12 +6,12 @@ Page({
     //图片路径的设置
     tempFilePaths: ''
   },
-  chooseimage: function () {
+  chooseimage: function() {
     var that = this;
     wx.showActionSheet({
       itemList: ['从相册中选择'], //, '拍照'
       itemColor: "#CED63A",
-      success: function (res) {
+      success: function(res) {
         if (!res.cancel) {
           if (res.tapIndex == 0) {
             that.chooseWxImage('album')
@@ -22,15 +21,13 @@ Page({
         }
       }
     })
-
   },
-
-  chooseWxImage: function (type) {
+  chooseWxImage: function(type) {
     var that = this;
     wx.chooseImage({
       sizeType: ['original', 'compressed'],
       sourceType: [type],
-      success: function (res) {
+      success: function(res) {
         console.log(res);
         that.setData({
           tempFilePaths: res.tempFilePaths[0],
@@ -38,11 +35,10 @@ Page({
       }
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     this.ctx = wx.createCameraContext()
   },
   //开始拍照事件
@@ -56,65 +52,41 @@ Page({
       }
     })
   },
-
   error(e) {
     console.log(e.detail)
   },
-
   //图片的选择
 
-
   //服务器图片的传输
-
 
 
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-
-  },
-
+  onReady: function() {},
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
-  },
-
+  onShow: function() {},
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
-
-  },
-
-  /**   
+  onHide: function() {},
+  /** 
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
-
-  },
-
+  onUnload: function() {},
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
-
-  },
-
+  onPullDownRefresh: function() {},
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
-
-  },
-
+  onReachBottom: function() {},
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
-  }
+  onShareAppMessage: function() {}
 })
