@@ -2,32 +2,36 @@
   <view class="dabeijin">
     <view class="hot_search">
       <!--热搜栏的设定-->
-      <text class="words">我的肤质近况：</text>
-      <input class='fenshu' value='78分' style="text-align:center"></input>
+      <view class="words">我的肤质近况：</view>
+      <input class='fenshu' value='78分' style="view-align:center"></input>
     </view>
-    <input class='fenshu1' value='综合得分' style="text-align:right"></input>
+    <input class='fenshu1' value='综合得分' style="view-align:right"></input>
 
     <view class="fuzhi">
-      <text class="words">肤质：</text>
+      <view class="fuzhi1">肤质：</view>
       <input class='hot' value='特征1'></input>
       <input class='hot' value='特征2'></input>
       <input class='hot' value='特征3'></input>
     </view>
 
     <view class="wenti">
-      <text class="words">问题：</text>
+      <view class="wenti1">问题：</view>
       <input class='hot' value='问题1'></input>
       <input class='hot' value='问题2'></input>
       <input class='hot' value='问题3'></input>
     </view>
 
-    <input class='yiju' value='根据07月20日-07月26日的一条检查记录生成的' style="text-align:center"></input>
+    <input class='yiju' value='根据07月20日-07月26日的一条检查记录生成的' style="view-align:center"></input>
   </view>
-  <text class="shousuo" style="text-align:center">已经为你搜索 163456589条记录！</text>
-  <text class="shousuo" style="text-align:center">90%xx特征匹配结果12354648条</text>
-  <text class="shousuo" style="text-align:center">90%yy特征匹配结果21548635条</text>
 
-  <text class="tuijian">我们为您推荐：</text>
+  <view class='jilu'>
+    <view class="shousuo" style="view-align:center">已经为你搜索 163456589条记录！</view>
+    <view class="shousuo" style="view-align:center">90%xx特征匹配结果12354648条</view>
+    <view class="shousuo" style="view-align:center">90%yy特征匹配结果21548635条</view>
+  </view>
+
+
+  <view class="tuijian">我们为您推荐：</view>
 
   <view class="page">
     <view class="page__bd">
@@ -41,15 +45,55 @@
           <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
         </view>
         <view class="weui-tab__panel">
-          <view class="weui-tab__content" hidden="{{activeIndex != 0}}">选项一的内容
-          
+
+          <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+            <view class='fifth'>
+              <view class='goo-self'>
+                <image class='goo-img' src='../../images/goo1.png'></image>
+                <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生 </label>
+                <label class='goo-lastsale'>已售4230件</label>
+                <label class='goo-price'>￥90--￥120</label>
+                <image class='goo-card' src='../../images/card.png'></image>
+              </view>
+            </view>
           </view>
-          <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容
+
+          <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+            <view class='fifth'>
+              <view class='goo-self'>
+                <image class='goo-img' src='../../images/tuijian/mianmo1.png'></image>
+                <label class='goo-des'>智能面膜韩国进口</label>
+                <label class='goo-lastsale'>已售6666件</label>
+                <label class='goo-price'>￥90--￥2980</label>
+                <image class='goo-card' src='../../images/card.png'></image>
+              </view>
+            </view>
           </view>
-          <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容
+
+          <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+            <view class='fifth'>
+              <view class='goo-self'>
+                <image class='goo-img' src='../../images/tuijian/jiemian.png'></image>
+                <label class='goo-des'>花窑花忍洁面氨基酸洗面奶</label>
+                <label class='goo-lastsale'>已售4230件</label>
+                <label class='goo-price'>￥90--￥120</label>
+                <image class='goo-card' src='../../images/card.png'></image>
+              </view>
+            </view>
           </view>
-          <view class="weui-tab__content" hidden="{{activeIndex != 3}}">选项四的内容
+
+          <view class="weui-tab__content" hidden="{{activeIndex != 3}}">
+            <view class='fifth'>
+              <view class='goo-self'>
+                <image class='goo-img' src='../../images/tuijian/ruye.png'></image>
+                <label class='goo-des'>泰国保湿水乳二合一</label>
+                <label class='goo-lastsale'>已售4230件</label>
+                <label class='goo-price'>￥90--￥120</label>
+                <image class='goo-card' src='../../images/card.png'></image>
+              </view>
+            </view>
           </view>
+
         </view>
       </view>
     </view>

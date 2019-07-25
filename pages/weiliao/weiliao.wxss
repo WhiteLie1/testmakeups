@@ -14,11 +14,12 @@
   height: 42rpx;
   color: #54c4c6;
   background: #f3f1f1;
-  font-size: 33rpx;
+  
 }
 .menu-des{
   text-align: center;/*文字居中显示*/
   color:#656565;
+  font-size: 33rpx;
   border-radius: 52rpx;
   width: 28rpx;
 }
@@ -39,6 +40,7 @@
   color: #7cbf
 }
 .fabiao{
+  display: flex;
   width: 32rpx;
   height: 32rpx;
   float: right;
@@ -70,5 +72,5 @@
   width: 27rpx;
   height: 27rpx;
   float: left;
-  color:#7cbf
+  color:#7cbfc5;
 }

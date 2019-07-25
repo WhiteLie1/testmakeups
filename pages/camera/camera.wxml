@@ -6,7 +6,7 @@
         <button type="primary" bindtap="takePhoto">拍照</button>
         <image src="{{tempFilePaths }}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 450rpx" />
       </view>
-      <view class="btn-area">
+      <view class="btn-area"><!---->
         <button type="primary" bindtap="chooseimage">选择相册</button>
       </view>
 
