@@ -9,12 +9,12 @@ Page({
     menu: {
       //图片存放地址
       imgUrls: [
-        '/images/fenlei.png',
-        '/images/hufu.png',
-        '/images/meizhuang.png',
-        '/images/pinpai.png',
-        '/images/remen.png',
-        '/images/xinpin.png'
+        { src:'/images/fenlei.png',url:'/shangchen/fenlei/fenlei'} ,
+        { src:'/images/hufu.png', url: '/shangchen/remen/remen'},
+        { src:'/images/meizhuang.png', url: '/shangchen/xinping/xinping'},
+        { src:'/images/pinpai.png', url: '/shangchen/pinpai/pinpai'},
+        { src:'/images/remen.png', url: '/shangchen/hufu/hufu'},
+        { src:'/images/xinpin.png', url: '/shangchen/meizhuang/meizhuang'}
       ],
       descs: [
         '分类',
@@ -39,6 +39,11 @@ Page({
   bindchange(e) {
     this.setData({
       swiperIndex: e.detail.current
+    })
+  },
+  toMenu0(e){
+    wx.navigateTo({
+      url: '/pages/fenlei/fenlei'
     })
   },
   /**

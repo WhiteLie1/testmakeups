@@ -74,8 +74,8 @@
 
   <view class="menu-wrp">
     <!--分类的设定-->
-    <view class="menu-list" wx:for="{{menu.imgUrls}}" wx:key="id" bindtap='toMenu' data-index='{{index}}'>
-      <image class="menu-img" src="{{item}}" />
+    <view class="menu-list" wx:for="{{menu.imgUrls}}" wx:key="id" bindtap='toMenu{{index}}' data-index='{{index}} '>
+      <image class="menu-img" src="{{item.src}}" />
       <view class="menu-desc">{{menu.descs[index]}}</view>
     </view>
   </view>

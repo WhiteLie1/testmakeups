@@ -6,7 +6,7 @@ Page({
    */
   data: {
     tabs: ["全部", "面膜", "洁面","乳液"],
-    activeIndex: 1,
+    activeIndex: 0,
     sliderOffset: 0,
     sliderLeft: 0,
     sliderWidth:0

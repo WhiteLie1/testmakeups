@@ -40,13 +40,15 @@
   color: #7cbf
 }
 .fabiao{
-  display: flex;
+  /*display: flex;*/
   width: 32rpx;
   height: 32rpx;
   float: right;
+ 
 }
+
 .rremen{
-  padding: 10px;
+  padding: 0px;
   font-size: 34rpx;
   color: #cf96b0;
   margin: 25px;
@@ -67,6 +69,8 @@
 }
 .R1{
   font-size: 27rpx;
+  margin-left: 30px;
+   margin-top: 10px;
 }
 .jing{
   width: 27rpx;

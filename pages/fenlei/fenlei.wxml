@@ -1,0 +1,103 @@
+<!--主盒子-->
+<view class="container">
+
+  <!-- 左侧栏 -->
+  <view class='nav_left'>
+
+    <view class="nav_left_items {{curNav == 1 ? 'active' : ''}}" 
+          bindtap="switchRightTab"  data-id="1">
+      首页
+    </view>
+
+    <view class="nav_left_items {{curNav == 2 ? 'active' : ''}}" 
+          bindtap="switchRightTab"  data-id="2">
+      美肤
+    </view>
+
+    <view class="nav_left_items {{curNav == 3 ? 'active' : ''}}" 
+          bindtap="switchRightTab" data-id="3">
+      化妆
+    </view>
+
+    <view class="nav_left_items {{curNav == 4 ? 'active' : ''}}" 
+          bindtap="switchRightTab" data-id="4">
+      生活
+    </view>
+
+     <view class="nav_left_items {{curNav == 5 ? 'active' : ''}}" 
+          bindtap="switchRightTab" data-id="5">
+      交流
+    </view>
+
+     <view class="nav_left_items {{curNav == 6 ? 'active' : ''}}" 
+          bindtap="switchRightTab" data-id="6">
+      交友
+    </view>
+
+     <view class="nav_left_items {{curNav == 7 ? 'active' : ''}}" 
+          bindtap="switchRightTab" data-id="7">
+      美容
+    </view>
+
+  </view>
+
+  <!-- 右侧栏 -->
+  <view class="nav_right">
+
+    <view wx:if="{{curNav==1}}">
+      <view class="nav_right_items">
+        <image src="https://gaitaobao3.alicdn.com/tfscom/i2/1127049716/TB15YIYb25TBuNjSspcXXbnGFXa_!!0-item_pic.jpg_240x240xz.jpg_.webp"></image>
+        <text>井尚美香水香氛滋润沐浴露女</text>
+      </view>
+    </view>
+
+    <view wx:if="{{curNav==2}}">
+      <view class="nav_right_items">
+        <image src="https://gaitaobao1.alicdn.com/tfscom/i4/758768216/O1CN01TI5z7j2AYycchyWUh_!!758768216.jpg_240x240xz.jpg_.webp"></image>
+        <text>奢悦净透VC小安瓶美肤亮白补水定</text>
+      </view>
+
+      
+
+    </view>
+
+    <view wx:if="{{curNav==3}}">
+      <view class="nav_right_items">
+        <image src="https://gaitaobao1.alicdn.com/tfscom/i3/2621336574/O1CN017sSUtI1yQwGhmCPe7_!!2621336574.jpg_240x240xz.jpg_.webp"></image>
+        <text>LAVER全身美白沐浴露美白身体美白</text>
+      </view>
+    </view>
+
+    <view wx:if="{{curNav==4}}">
+      <view class="nav_right_items">
+        <image src="https://gaitaobao1.alicdn.com/tfscom/i3/669296868/O1CN01u0N9cj20baihGMhgP_!!669296868.jpg_240x240xz.jpg_.webp"></image>
+        <text>烟酰胺香氛沐浴露蓝风铃香水型持</text>
+      </view>
+    </view>
+
+    <view wx:if="{{curNav==5}}">
+      <view class="nav_right_items">
+        <image src="https://gaitaobao3.alicdn.com/tfscom/i4/2582492646/O1CN01vVCEZE1VPuXAbIVSQ_!!2582492646.jpg_240x240xz.jpg_.webp"></image>
+        <text>防晒霜喷雾面部防水全身防紫外线</text>
+      </view>
+    </view>
+
+    <view wx:if="{{curNav==6}}">
+      <view class="nav_right_items">
+        <image src="https://gaitaobao2.alicdn.com/tfscom/i2/654751816/O1CN01omLapM1PHlmdY1qbo_!!654751816.jpg_240x240xz.jpg_.webp"></image>
+        <text>抖音爆款防晒霜喷雾女男面部学生</text>
+      </view>
+    </view>
+
+    <view wx:if="{{curNav==7}}">
+      <view class="nav_right_items">
+        <image src="https://gaitaobao4.alicdn.com/tfscom/i3/2987441916/O1CN01MQll501Q1ZPFTEETO_!!0-item_pic.jpg_240x240xz.jpg_.webp"></image>
+        <text>lacabine西班牙安瓶精华VC小安瓶精</text>
+      </view>
+    </view>
+
+
+
+  </view>
+
+</view>
